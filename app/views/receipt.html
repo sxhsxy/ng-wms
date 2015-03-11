@@ -1,0 +1,42 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <table class="table table-bordered table-hover">
+  <thead>
+  <tr>
+    <th ng-repeat="column in columns">
+      {{column.label}}    
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><input type="text" ng-model="filter.id" class="form-control"/></td>
+    <td><input type="date" ng-model="filter.name" class="form-control"/></td>
+    <td><input type="text" ng-model="filter.followers" class="form-control"/></td>
+    <td></td>
+  </tr>
+  <tr ng-repeat="item in receiptPage.content">
+    <td>
+        {{item.id}}
+    </td>
+    <td>
+        {{item.receiptTime}}
+    </td>
+    <td>
+        {{item.sale}}
+    </td>
+
+  </tr>
+  
+  </tbody>
+</table>
+</div>
